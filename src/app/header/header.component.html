@@ -1,1 +1,31 @@
-<p>header works!</p>
+<div class="header pad-left-right">
+    <div class="header-logo">
+        <a href="#" (click)="resetActiveLink()">
+            <h1>LOGO
+            </h1>
+        </a>
+    </div>
+    <div class="header-navbar">
+        <a href="#about-me" (click)="setActiveLink('about-me')" [class.active-link]="activeLink === 'about-me'">About
+            me</a>
+        <a href="#skills" (click)="setActiveLink('skills')" [class.active-link]="activeLink === 'skills'">Skills</a>
+        <a href="#my-portfolio" (click)="setActiveLink('my-portfolio')"
+            [class.active-link]="activeLink === 'my-portfolio'">Portfolio</a>
+        <a href="#contact" (click)="setActiveLink('contact')"
+            [class.active-link]="activeLink === 'contact'">Contact</a>
+        <img [@imageTransition]="burgerImageSrc === image ? 'visible' : 'hidden'" *ngFor="let image of burgerImages"
+            [src]="image" (click)="toggleFullScreenDiv()">
+    </div>
+    <div class="full-screen-div" *ngIf="isFullScreenDivVisible">
+        <a href="#about-me" data-aos="zoom-out-up" data-aos-delay="0" (click)="toggleFullScreenDiv()"
+            [class.active-link]="activeLink === 'about-me'">About me</a>
+
+        <a href="#skills" data-aos="zoom-out-up" data-aos-delay="200" (click)="toggleFullScreenDiv()"
+            [class.active-link]="activeLink === 'skills'">Skills</a>
+
+        <a href="#my-portfolio" data-aos="zoom-out-up" data-aos-delay="400" (click)="toggleFullScreenDiv()"
+            [class.active-link]="activeLink === 'my-portfolio'">Portfolio</a>
+        <a href="#contact" data-aos="zoom-out-up" data-aos-delay="600" (click)="toggleFullScreenDiv()"
+            [class.active-link]="activeLink === 'my-portfolio'">Contact</a>
+    </div>
+</div>
