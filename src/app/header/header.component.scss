@@ -5,7 +5,7 @@
   width: 100svw;
   max-width: 100%;
   height: 100%;
-  background-color: rgba(195, 168, 160, 0.70);
+  background-color: rgba(195, 168, 160, 0.7);
 
   display: flex;
   flex-direction: column;
@@ -50,20 +50,6 @@
     letter-spacing: 0.05em;
   }
 
-  p {
-    color: #1CDAE6;
-  }
-
-  .cutted-i {
-    background: linear-gradient(0deg, white 65%, transparent 30%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .cutted-i-top {
-    background-color: #4B47FF;
-  }
 
   .header-navbar {
     a {
@@ -74,7 +60,7 @@
       cursor: pointer;
 
       &:hover {
-        color: #1CDAE6;
+        color: #fff0ea;
       }
     }
 
@@ -167,8 +153,8 @@
 }
 
 .active-link {
-  color: #1CDAE6 !important;
-  box-shadow: 0 4px #4B47FF;
+  color: #fff0ea !important;
+  box-shadow: 0 1px #fff0ea;
   display: inline-block;
 }
 
