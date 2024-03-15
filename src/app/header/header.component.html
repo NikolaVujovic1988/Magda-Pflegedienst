@@ -5,7 +5,7 @@
         </a>
     </div>
     <div class="header-navbar">
-        <a href="#about-me" (click)="setActiveLink('about-me')" [class.active-link]="activeLink === 'about-me'">Über uns</a>
+        <a href="#about-us" (click)="setActiveLink('about-me')" [class.active-link]="activeLink === 'about-us'">Über uns</a>
         <a href="#skills" (click)="setActiveLink('skills')" [class.active-link]="activeLink === 'skills'">Leistungen</a>
         <a href="#contact" (click)="setActiveLink('contact')"
             [class.active-link]="activeLink === 'contact'">Kontakt</a>
@@ -13,7 +13,7 @@
             [src]="image" (click)="toggleFullScreenDiv()">
     </div>
     <div class="full-screen-div" *ngIf="isFullScreenDivVisible">
-        <a href="#about-me" data-aos="zoom-out-up" data-aos-delay="0" (click)="toggleFullScreenDiv()"
+        <a href="#about-us" data-aos="zoom-out-up" data-aos-delay="0" (click)="toggleFullScreenDiv()"
             [class.active-link]="activeLink === 'about-me'">Über uns</a>
 
         <a href="#skills" data-aos="zoom-out-up" data-aos-delay="200" (click)="toggleFullScreenDiv()"

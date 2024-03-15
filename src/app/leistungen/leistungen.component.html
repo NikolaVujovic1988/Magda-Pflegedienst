@@ -1,0 +1,13 @@
+<div class="leistungen pad-left-right">
+    <div class="headline-leistungen">
+        <h2 data-aos="fade-up">Leistungen</h2>
+    </div>
+    <div class="leistungen-content">
+        <div class="box" data-aos="fade-up" *ngFor="let box of boxes">
+            <img src="{{box.imageUrl}}" alt="Slika">
+            <ul>
+                <li *ngFor="let item of box.items">{{item}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
