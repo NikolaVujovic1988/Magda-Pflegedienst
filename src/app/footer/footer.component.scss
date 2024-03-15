@@ -1,0 +1,11 @@
+.footer {
+    min-height: 10vh;
+    background-color: rgb(152, 106, 198);
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 20%;
+        object-fit: contain;
+    }
+}

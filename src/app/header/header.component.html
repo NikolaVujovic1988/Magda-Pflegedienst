@@ -5,21 +5,21 @@
         </a>
     </div>
     <div class="header-navbar">
-        <a href="#about-us" (click)="setActiveLink('about-me')" [class.active-link]="activeLink === 'about-us'">Über uns</a>
-        <a href="#skills" (click)="setActiveLink('skills')" [class.active-link]="activeLink === 'skills'">Leistungen</a>
-        <a href="#contact" (click)="setActiveLink('contact')"
-            [class.active-link]="activeLink === 'contact'">Kontakt</a>
+        <a href="#about-us" (click)="setActiveLink('about-us')" [class.active-link]="activeLink === 'about-us'">Über uns</a>
+        <a href="#leistungen" (click)="setActiveLink('leistungen')" [class.active-link]="activeLink === 'leistungen'">Leistungen</a>
+        <a href="#kontakt" (click)="setActiveLink('kontakt')"
+            [class.active-link]="activeLink === 'kontakt'">Kontakt</a>
         <img [@imageTransition]="burgerImageSrc === image ? 'visible' : 'hidden'" *ngFor="let image of burgerImages"
             [src]="image" (click)="toggleFullScreenDiv()">
     </div>
     <div class="full-screen-div" *ngIf="isFullScreenDivVisible">
         <a href="#about-us" data-aos="zoom-out-up" data-aos-delay="0" (click)="toggleFullScreenDiv()"
-            [class.active-link]="activeLink === 'about-me'">Über uns</a>
+            [class.active-link]="activeLink === 'about-us'">Über uns</a>
 
-        <a href="#skills" data-aos="zoom-out-up" data-aos-delay="200" (click)="toggleFullScreenDiv()"
-            [class.active-link]="activeLink === 'skills'">Leistungen</a>
+        <a href="#leistungen" data-aos="zoom-out-up" data-aos-delay="200" (click)="toggleFullScreenDiv()"
+            [class.active-link]="activeLink === 'leistungen'">Leistungen</a>
 
-        <a href="#contact" data-aos="zoom-out-up" data-aos-delay="600" (click)="toggleFullScreenDiv()"
-            [class.active-link]="activeLink === 'contact'">Kontakt</a>
+        <a href="#kontakt" data-aos="zoom-out-up" data-aos-delay="600" (click)="toggleFullScreenDiv()"
+            [class.active-link]="activeLink === 'kontakt'">Kontakt</a>
     </div>
 </div>
