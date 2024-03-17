@@ -9,7 +9,7 @@ export class LeistungenComponent {
   boxes = [
     {
       imageUrl: '/assets/images/icons/Medikamenten.png',
-      items: ['Vitalzeichenkontrolle', 'Blutzuckerkontrolle', 'PEG-Versorgung', 'Katheterversorgung', 'Wundversorgung', 'Medikamentengabe']
+      items: ['Vitalzeichenkontrolle', 'Blutzuckerkontrolle', 'PEG-Versorgung', 'Katheterversorgung', 'Wundversorgung', 'Stomaversorgung', 'Medikamentengabe']
     },
     {
       imageUrl: '/assets/images/icons/Pflege.png',

@@ -1,3 +1,53 @@
-<div class="footer">
-    <img src="/assets/images/Magda-white-transparent.png" alt="">
-</div>
+<footer class="pad-left-right footer">
+    <div class="header-logo">
+        <span class="impressum" (click)="toggleImpressumPopup()">Impressum</span>
+    </div>
+    <div class="footer-center">
+        <img src="/assets/images/Magda-white-transparent.png" alt="">    
+        <span class="span-center">© Magda Ambulante Pflege GmbH i.G.</span>
+    </div>
+    <div class="footer-icons">
+        <a href="https://instagram.com" target="_blank" class="icon-link">
+            <img class="icons" src="/assets/images/icons/instagram.png" alt="GitHub">
+        </a>
+        <a href="#kontakt" class="icon-link">
+            <img class="icons" src="/assets/images/icons/email.png" alt="Email">
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="icon-link">
+            <img class="icons" src="/assets/images/icons/facebook.png" alt="LinkedIn">
+        </a>
+
+    </div>
+
+    <div class="popup-container" *ngIf="showImpressumPopup" (click)="closePopupOnOuterClick($event)">
+        <div class="popup-content" data-aos="flip-up" data-aos-duration="2000" (click)="stopPropagating($event)">
+            <div class="headline-close">
+                <h1>Impressum</h1>
+                <img (click)="showImpressumPopup = false" src="/assets/images/icons/Property 1=CLOSE FINAL.png" alt="">
+            </div>
+            <h2>Angaben gemäß § 5 TMG:</h2>
+            <p><br>Magda Ambulante Pflege GmbH i.G.<br></p>
+            <p><br>Magdalena Nesic<br>Geschäftsführerin</p><br><br>
+            <h3>Postanschrift:</h3>
+            <p>Alleestraße 56<br>42853, Remscheid<br></p>
+            <h3>Kontakt:</h3>
+            <p>Telefon: 017625744644<br>E-Mail: info&#64;magda-ambulante-pflege.de</p>
+            <p></p>
+            <p><br></p>
+            <p></p>
+            <h2>Hinweise zur Website</h2>
+            <p></p>
+            <h2>Information gemäß § 36 VSBG</h2>
+            <p>Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz über die alternative Streitbeilegung in
+                Verbrauchersachen) erklärt der Betreiber dieser Website:</p>
+            <p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer
+                Verbraucherschlichtungsstelle
+                teilzunehmen.</p>
+            <p></p>
+            <p><em>Das Impressum wurde mit dem <a
+                        href="https://www.activemind.de/datenschutz/impressums-generator/">Impressums-Generator der
+                        activeMind AG</a> erstellt.</em></p>
+                        <div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com'</a></div>
+        </div>
+    </div>
+</footer>
