@@ -1,0 +1,18 @@
+<div class="google-maps-overlay pad-left-right" *ngIf="!showMap">
+    <img src="/assets/images/maps-img.png" alt="Background Image" style="width:100%; height:auto;">
+    <div class="terms-overlay">
+        <p>Indem Sie auf Akzeptieren klicken, erklären Sie sich mit den <a href="https://www.google.com/intl/de_de/help/terms_maps/" target="_blank" rel="noopener noreferrer">Nutzungsbedingungen von Google Maps</a> einverstanden und aktivieren damit die Kartendarstellung.</p>
+        <button (click)="acceptTerms()">Akzeptieren</button>
+    </div>
+</div>
+
+<div class="pad-left-right google-maps-iframe" *ngIf="showMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12838.78794405312!2d7.182944081174883!3d51.18439448061883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b92a6e7fcd2bc9%3A0x1c2760ffab258540!2s42853%20Remscheid-N%C3%BCdelshalbach!5e0!3m2!1sen!2sde!4v1711286925016!5m2!1sen!2sde" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>

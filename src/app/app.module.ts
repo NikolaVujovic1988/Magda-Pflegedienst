@@ -13,6 +13,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { LeistungenComponent } from './leistungen/leistungen.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { FooterComponent } from './footer/footer.component';
+import { GooglemapsComponent } from './googlemaps/googlemaps.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     AboutUsComponent,
     LeistungenComponent,
     KontaktComponent,
-    FooterComponent
+    FooterComponent,
+    GooglemapsComponent
   ],
   imports: [
     BrowserModule,

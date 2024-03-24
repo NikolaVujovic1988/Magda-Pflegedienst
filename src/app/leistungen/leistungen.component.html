@@ -5,6 +5,7 @@
     <div class="leistungen-content">
         <div class="box" data-aos="fade-up" *ngFor="let box of boxes">
             <img src="{{box.imageUrl}}" alt="Slika">
+            <span>{{box.headline}}</span>
             <ul>
                 <li *ngFor="let item of box.items">{{item}}</li>
             </ul>

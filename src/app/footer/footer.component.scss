@@ -145,6 +145,20 @@ footer {
         gap: 10px;
         justify-content: center;
         align-items: center;
+
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }  
+        
+        .header-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
     }
 }
 
