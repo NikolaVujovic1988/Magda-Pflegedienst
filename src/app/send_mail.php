@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'info@ambulantpflegedienst-magda.de';
+$recipient = 'info@ambulante-pflegedienst-magda.de';
 $redirect = 'index.html';
 
 ########### CONFIG END ###########
