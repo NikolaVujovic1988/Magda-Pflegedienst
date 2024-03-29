@@ -91,7 +91,7 @@ export class KontaktComponent {
     this.sendingMessage = true;
 
     try {
-      await this.http.post('https://ambulantpflegedienst-magda.de//send_mail.php', formData, { responseType: 'text' }).toPromise();
+      await this.http.post('https://ambulante-pflegedienst-magda.de//send_mail.php', formData, { responseType: 'text' }).toPromise();
 
       this.showSuccessBanner();
       this.sendingMessage = false;
