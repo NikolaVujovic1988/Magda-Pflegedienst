@@ -5,8 +5,8 @@
         </a>
     </div>
     <div class="header-navbar">
-        <a href="#about-us" (click)="setActiveLink('about-us')" [class.active-link]="activeLink === 'about-us'">Über uns</a>
         <a href="#leistungen" (click)="setActiveLink('leistungen')" [class.active-link]="activeLink === 'leistungen'">Leistungen</a>
+        <a href="#about-us" (click)="setActiveLink('about-us')" [class.active-link]="activeLink === 'about-us'">Über uns</a>
         <a href="#kontakt" (click)="setActiveLink('kontakt')"
             [class.active-link]="activeLink === 'kontakt'">Kontakt</a>
         <img [@imageTransition]="burgerImageSrc === image ? 'visible' : 'hidden'" *ngFor="let image of burgerImages"
